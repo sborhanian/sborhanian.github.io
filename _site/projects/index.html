@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ssohrab Borhanian, Ph.D.</title>
+  <meta name="description" content="Scientific software engineer and gravitational-wave physicist." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="/">Ssohrab Borhanian</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"
+              onclick="document.getElementById('navbar').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li>
+          <a href="/"
+             >About</a>
+        </li>
+        <li>
+          <a href="/cv/"
+             >CV</a>
+        </li>
+        <li>
+          <a href="/projects/"
+             class="active">Projects</a>
+        </li>
+        <li>
+          <a href="/publications/"
+             >Publications</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+  <section class="section section--top">
+    <div class="container">
+      <h2 class="section-title">Open Source Projects</h2>
+      <div class="projects-grid">
+
+        
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">gwbench</h3>
+              <p class="project-tagline">Gravitational-Wave Detector & Network Benchmarking</p>
+            </div>
+            <span class="project-badge">
+              Lead Developer
+            </span>
+          </div>
+          <p class="project-period">2019 – Present</p>
+          
+          <ul>
+            
+            <li>Open-source Python package for Fisher-Matrix-based benchmarking of gravitational-wave detector networks.</li>
+            
+            <li>Adopted as a primary analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.</li>
+            
+            <li>Highly modular and streamlined user experience for large-scale computational studies.</li>
+            
+            <li>Documented, packaged, and maintained for long-term community use; peer-reviewed publication.</li>
+            
+          </ul>
+          
+          
+          <div class="project-links">
+            
+            <a href="https://gitlab.com/sborhanian/gwbench" target="_blank" rel="noopener" class="tag-link">
+              GitLab
+            </a>
+            
+            <a href="https://arxiv.org/abs/2010.15202" target="_blank" rel="noopener" class="tag-link">
+              Class. Quant. Grav. 38 (2021) — arXiv:2010.15202
+            </a>
+            
+          </div>
+          
+        </div>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">xkn</h3>
+              <p class="project-tagline">Kilonova Modeling Framework</p>
+            </div>
+            <span class="project-badge project-badge-secondary">
+              Core Developer
+            </span>
+          </div>
+          <p class="project-period">2021 – 2023</p>
+          
+          <ul>
+            
+            <li>Python package to generate kilonova light curves from binary neutron star mergers.</li>
+            
+            <li><em>Key contributions:</em> Implementation of accessible user interface and optimization for computational efficiency.</li>
+            
+            <li>Documented, packaged, and maintained for long-term community use; peer-reviewed publication.</li>
+            
+          </ul>
+          
+          
+          <div class="project-links">
+            
+            <a href="https://github.com/GiacomoRicigliano/xkn" target="_blank" rel="noopener" class="tag-link">
+              GitHub
+            </a>
+            
+            <a href="https://arxiv.org/abs/2311.15709" target="_blank" rel="noopener" class="tag-link">
+              MNRAS 529 (2024) 647-663 — arXiv:2311.15709
+            </a>
+            
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; 2026 Ssohrab Borhanian</p>
+      <p class="footer-muted">EU Citizen &middot; sborhanian.posted198@passmail.net</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+      nav.classList.remove('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+  </script>
+
+</body>
+</html>

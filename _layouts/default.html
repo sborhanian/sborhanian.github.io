@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAV ──────────────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"
+              onclick="document.getElementById('navbar').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li>
+          <a href="{{ '/' | relative_url }}"
+             {% if page.url == '/' %}class="active"{% endif %}>About</a>
+        </li>
+        <li>
+          <a href="{{ '/cv/' | relative_url }}"
+             {% if page.url contains '/cv' %}class="active"{% endif %}>CV</a>
+        </li>
+        <li>
+          <a href="{{ '/projects/' | relative_url }}"
+             {% if page.url contains 'projects' %}class="active"{% endif %}>Projects</a>
+        </li>
+        <li>
+          <a href="{{ '/publications/' | relative_url }}"
+             {% if page.url contains 'publications' %}class="active"{% endif %}>Publications</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <!-- ── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+      <p class="footer-muted">{{ site.author.note }} &middot; {{ site.author.email }}</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+      nav.classList.remove('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => nav.classList.remove('open'));
+    });
+  </script>
+
+</body>
+</html>

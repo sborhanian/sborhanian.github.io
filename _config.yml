@@ -1,0 +1,51 @@
+# ── Site ──────────────────────────────────────────────────────────────────────
+title: "Ssohrab Borhanian, Ph.D."
+description: "Scientific software engineer and gravitational-wave physicist."
+
+# Set url to your GitHub Pages root (e.g. "https://sborhanian.github.io").
+# Leave baseurl empty for a user/org page; set to "/repo-name" for a project page.
+url: ""
+baseurl: ""
+
+# ── Author ────────────────────────────────────────────────────────────────────
+author:
+  name:    "Ssohrab Borhanian"
+  degree:  "Ph.D."
+  subtitle: "Scientific Software Engineer & Gravitational-Wave Physicist"
+  note:    "EU Citizen"
+  email:   "sborhanian.posted198@passmail.net"
+  linkedin_url:    "https://www.linkedin.com/in/ssohrab-borhanian"
+  linkedin_handle: "ssohrab-borhanian"
+  gitlab_url:    "https://gitlab.com/sborhanian"
+  gitlab_handle: "sborhanian"
+  inspirehep_url: "https://inspirehep.net/authors/1730808"
+  orcid_url:     "https://orcid.org/0000-0003-0161-6109"
+  orcid_handle:  "0000-0003-0161-6109"
+  scholar_url:   "https://scholar.google.com/citations?hl=en&user=mPQDEdoAAAAJ"
+  location:      "Milan, Italy"
+  employer:      "University of Milano-Bicocca"
+
+# ── Hero stats ────────────────────────────────────────────────────────────────
+stats:
+  - number: "25"
+    label: "Publications"
+  - number: "3700+"
+    label: "Citations"
+  - number: "20+"
+    label: "Talks & Seminars"
+  - number: "9"
+    label: "Years Research"
+
+# ── Build ─────────────────────────────────────────────────────────────────────
+permalink: pretty   # /experience.html → /experience/
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .gitignore

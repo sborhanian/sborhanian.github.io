@@ -1,0 +1,92 @@
+---
+layout: default
+title: "CV"
+---
+
+<main>
+  <section class="section section--top section-alt">
+    <div class="container">
+
+      <!-- ── PDF download ───────────────────────────────────────────── -->
+      <div class="cv-download-bar">
+        <div>
+          <h2 class="section-title" style="margin-bottom:0; border-bottom:none;">CV</h2>
+        </div>
+        <a href="{{ '/assets/Borhanian_CV.pdf' | relative_url }}"
+           class="btn btn-primary" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download PDF
+        </a>
+      </div>
+
+      <hr class="cv-divider" />
+
+      <!-- ── Experience ─────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Experience</h3>
+      <div class="timeline">
+
+        {% for job in site.data.cv.experience %}
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h4 class="timeline-role">{{ job.role }}</h4>
+                <p class="timeline-org">
+                  {{ job.org }}
+                  {% if job.group %}
+                  <span class="timeline-group">{{ job.group }}</span>
+                  {% endif %}
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">{{ job.location }}</span>
+                <span class="timeline-date">{{ job.dates }}</span>
+              </div>
+            </div>
+            {% if job.bullets %}
+            <ul>
+              {% for bullet in job.bullets %}
+              <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <hr class="cv-divider" />
+
+      <!-- ── Education ──────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Education</h3>
+      <div class="edu-grid">
+
+        {% for edu in site.data.cv.education %}
+        <div class="edu-card">
+          <div class="edu-degree">{{ edu.degree }}</div>
+          <div class="edu-institution">{{ edu.institution }}</div>
+          <div class="edu-location-date">
+            <span>{{ edu.location }}</span>
+            <span>{{ edu.dates }}</span>
+          </div>
+          {% if edu.honors %}
+          <div class="edu-honors">
+            {% for honor in edu.honors %}
+            <span class="honor-tag">{{ honor }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </section>
+</main>

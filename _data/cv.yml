@@ -1,0 +1,373 @@
+# ── About ─────────────────────────────────────────────────────────────────────
+# Each paragraph may contain inline HTML (bold, em, etc.).
+about:
+  paragraphs:
+    - "I am a physicist and open-source software developer working at the intersection
+       of gravitational-wave science and scientific computing. With nearly a decade of
+       academic research experience and a deep commitment to reproducible,
+       community-facing software, I build tools that enable large-scale science."
+    - "My flagship project, <strong>gwbench</strong>, has been adopted as a primary
+       analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.
+       I am an active member of the gravitational-wave community, with
+       <strong>24 peer-reviewed publications</strong> and over
+       <strong>2,900 citations</strong>."
+    - "I thrive in collaborative environments, communicate technical ideas fluently
+       across disciplines, and adapt quickly to new tools and challenges."
+
+# ── Experience ────────────────────────────────────────────────────────────────
+# bullets are optional (omit the key to skip the list).
+experience:
+  - role:     "Postdoctoral Researcher"
+    org:      "Università degli Studi di Milano-Bicocca"
+    group:    "Research group: Prof. Davide Gerosa"
+    location: "Milan, Italy"
+    dates:    "09/2023 – Present"
+    bullets:
+      - "Developing ML-based and non-parametric, hierarchical gravitational-wave
+         data analysis pipelines."
+
+  - role:     "Postdoctoral Researcher"
+    org:      "Friedrich-Schiller-Universität Jena"
+    group:    "Research group: Prof. Sebastiano Bernuzzi"
+    location: "Jena, Germany"
+    dates:    "06/2021 – 08/2023"
+    bullets:
+      - "Contributed to and extended the functionality of the open-source Python
+         packages <strong>xkn</strong> and <strong>gwbench</strong>."
+
+  - role:     "Graduate Researcher (Ph.D.)"
+    org:      "The Pennsylvania State University"
+    group:    "Advisor: Prof. Bangalore S. Sathyaprakash"
+    location: "State College, PA, USA"
+    dates:    "08/2016 – 05/2021"
+    bullets:
+      - "Developed and built <strong>gwbench</strong> as a modular Python framework
+         for large-scale science case studies."
+      - "Investigated the science case of third-generation gravitational-wave detectors
+         via comprehensive trade studies."
+      - "Investigated numerical relativity waveforms for a post-Newtonian signature
+         in the strong-field regime."
+
+  - role:     "Research Intern"
+    org:      "Duke University"
+    group:    "RISE Worldwide Scholarship · Advisor: Prof. Kate Scholberg"
+    location: "Durham, NC, USA"
+    dates:    "08/2012 – 09/2012"
+
+# ── Open Source Projects ──────────────────────────────────────────────────────
+# badge_secondary: true makes the badge grey instead of blue.
+projects:
+  - name:   "gwbench"
+    title:  "Gravitational-Wave Detector & Network Benchmarking"
+    badge:  "Lead Developer"
+    dates:  "2019 – Present"
+    bullets:
+      - "Open-source Python package for Fisher-Matrix-based benchmarking of
+         gravitational-wave detector networks."
+      - "Adopted as a primary analysis tool by the Einstein Telescope and
+         Cosmic Explorer collaborations."
+      - "Highly modular and streamlined user experience for large-scale
+         computational studies."
+      - "Documented, packaged, and maintained for long-term community use;
+         peer-reviewed publication."
+    links:
+      - label: "GitLab"
+        url:   "https://gitlab.com/sborhanian/gwbench"
+      - label: "Class. Quant. Grav. 38 (2021) — arXiv:2010.15202"
+        url:   "https://arxiv.org/abs/2010.15202"
+
+  - name:            "xkn"
+    title:           "Kilonova Modeling Framework"
+    badge:           "Core Developer"
+    badge_secondary: true
+    dates:           "2021 – 2023"
+    bullets:
+      - "Python package to generate kilonova light curves from binary neutron star mergers."
+      - "<em>Key contributions:</em> Implementation of accessible user interface and
+         optimization for computational efficiency."
+      - "Documented, packaged, and maintained for long-term community use;
+         peer-reviewed publication."
+    links:
+      - label: "GitHub"
+        url:   "https://github.com/GiacomoRicigliano/xkn"
+      - label: "MNRAS 529 (2024) 647-663 — arXiv:2311.15709"
+        url:   "https://arxiv.org/abs/2311.15709"
+
+# ── Education ─────────────────────────────────────────────────────────────────
+education:
+  - degree:      "Ph.D. & M.Sc. in Physics"
+    institution: "The Pennsylvania State University"
+    location:    "State College, PA, USA"
+    dates:       "2014 – 2021"
+    honors:
+      - "Fulbright Scholar"
+      - "Peter Clay Eklund Lecturing Award"
+
+  - degree:      "B.Sc. in Physics & Mathematics"
+    institution: "Technical University of Berlin"
+    location:    "Berlin, Germany"
+    dates:       "2009 – 2014"
+    honors:
+      - "Only double degree in cohort"
+
+# ── Skills ────────────────────────────────────────────────────────────────────
+# All items are plain strings. Use parentheses for notes, e.g. "German (fluent)".
+skills:
+  - category: "Programming"
+    items:
+      - "Python"
+      - "Swift / SwiftUI"
+      - "Fortran"
+      - "Java"
+
+  - category: "Python Ecosystem"
+    items:
+      - "JAX"
+      - "NumPy"
+      - "SciPy"
+      - "Pandas"
+      - "Matplotlib"
+      - "h5py"
+      - "joblib"
+      - "multiprocessing"
+      - "setuptools"
+
+  - category: "Developer Tools"
+    items:
+      - "Git"
+      - "Linux"
+      - "HPC (SLURM / HTCondor)"
+      - "Mathematica"
+      - "MATLAB"
+      - "LaTeX"
+
+  - category: "Data Analysis"
+    items:
+      - "Machine Learning"
+      - "Bayesian Inference"
+      - "Monte Carlo Methods"
+      - "Time Series Analysis"
+
+  - category: "Languages"
+    items:
+      - "German (fluent)"
+      - "English (fluent)"
+      - "Persian (fluent)"
+      - "French (basic)"
+      - "Italian (basic)"
+
+  - category: "Communication"
+    items:
+      - "20+ international talks"
+      - "24 publications"
+      - "2900+ citations"
+
+# ── Publications ───────────────────────────────────────────────────────────────
+# Sourced from my_publications.bbl. Fields: authors, title, journal, year,
+# ref (volume + page), arxiv (ID only), arxiv_url, doi_url.
+# Omit doi_url / ref for preprints.
+publications:
+
+  - authors: "S. Borhanian, A. Renzini, P. S. Cole, C. Pacilio, M. Mancarella, D. Gerosa"
+    title:   "Impact of facility timing and coordination for next-generation gravitational-wave detectors"
+    journal: "Preprint"
+    year:    "2025"
+    arxiv:     "2510.11861"
+    arxiv_url: "https://arxiv.org/abs/2510.11861"
+
+  - authors: "ET collaboration"
+    title:   "The Science of the Einstein Telescope"
+    journal: "Preprint"
+    year:    "2025"
+    arxiv:     "2503.12263"
+    arxiv_url: "https://arxiv.org/abs/2503.12263"
+
+  - authors: "G. Ricigliano, A. Perego, S. Borhanian, E. Loffredo, K. Kawaguchi, S. Bernuzzi et al."
+    title:   "xkn: a semi-analytic framework for the modelling of kilonovae"
+    journal: "Mon. Not. Roy. Astron. Soc."
+    year:    "2024"
+    ref:     "529, 647"
+    arxiv:     "2311.15709"
+    arxiv_url: "https://arxiv.org/abs/2311.15709"
+    doi_url:   "https://doi.org/10.1093/mnras/stae572"
+
+  - authors: "J. W. Gardner, L. Sun, S. Borhanian, P. D. Lasky, E. Thrane, D. E. McClelland et al."
+    title:   "Multimessenger astronomy with a Southern-hemisphere gravitational-wave observatory"
+    journal: "Phys. Rev. D"
+    year:    "2023"
+    ref:     "108, 123026"
+    arxiv:     "2308.13103"
+    arxiv_url: "https://arxiv.org/abs/2308.13103"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.108.123026"
+
+  - authors: "I. Gupta et al."
+    title:   "Characterizing gravitational wave detector networks: from A♯ to cosmic explorer"
+    journal: "Class. Quant. Grav."
+    year:    "2024"
+    ref:     "41, 245001"
+    arxiv:     "2307.10421"
+    arxiv_url: "https://arxiv.org/abs/2307.10421"
+    doi_url:   "https://doi.org/10.1088/1361-6382/ad7b99"
+
+  - authors: "R. Huxford, R. Kashyap, S. Borhanian, A. Dhani, I. Gupta, B. S. Sathyaprakash"
+    title:   "Accuracy of neutron star radius measurement with the next generation of terrestrial gravitational-wave observatories"
+    journal: "Phys. Rev. D"
+    year:    "2024"
+    ref:     "109, 103035"
+    arxiv:     "2307.05376"
+    arxiv_url: "https://arxiv.org/abs/2307.05376"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.109.103035"
+
+  - authors: "M. Evans et al."
+    title:   "Cosmic Explorer: A Submission to the NSF MPSAC ngGW Subcommittee"
+    journal: "Preprint"
+    year:    "2023"
+    arxiv:     "2306.13745"
+    arxiv_url: "https://arxiv.org/abs/2306.13745"
+
+  - authors: "M. Branchesi et al."
+    title:   "Science with the Einstein Telescope: a comparison of different designs"
+    journal: "JCAP"
+    year:    "2023"
+    ref:     "07, 068"
+    arxiv:     "2303.15923"
+    arxiv_url: "https://arxiv.org/abs/2303.15923"
+    doi_url:   "https://doi.org/10.1088/1475-7516/2023/07/068"
+
+  - authors: "I. Gupta, S. Borhanian, A. Dhani, D. Chattopadhyay, R. Kashyap, V. A. Villar et al."
+    title:   "Neutron star-black hole mergers in next generation gravitational-wave observatories"
+    journal: "Phys. Rev. D"
+    year:    "2023"
+    ref:     "107, 124007"
+    arxiv:     "2301.08763"
+    arxiv_url: "https://arxiv.org/abs/2301.08763"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.107.124007"
+
+  - authors: "A. Dhani, S. Borhanian, A. Gupta, B. Sathyaprakash"
+    title:   "Cosmography with bright and Love sirens"
+    journal: "Preprint"
+    year:    "2022"
+    arxiv:     "2212.13183"
+    arxiv_url: "https://arxiv.org/abs/2212.13183"
+
+  - authors: "K. K. Y. Ng et al."
+    title:   "Measuring properties of primordial black hole mergers at cosmological distances: Effect of higher order modes in gravitational waves"
+    journal: "Phys. Rev. D"
+    year:    "2023"
+    ref:     "107, 024041"
+    arxiv:     "2210.03132"
+    arxiv_url: "https://arxiv.org/abs/2210.03132"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.107.024041"
+
+  - authors: "L. Reali, A. Antonelli, R. Cotesta, S. Borhanian, M. Çalışkan, E. Berti et al."
+    title:   "The impact of confusion noise on golden binary neutron-star events in next-generation terrestrial observatories"
+    journal: "Preprint"
+    year:    "2022"
+    arxiv:     "2209.13452"
+    arxiv_url: "https://arxiv.org/abs/2209.13452"
+
+  - authors: "M. Breschi, R. Gamba, G. Carullo, S. Borhanian, S. Bernuzzi"
+    title:   "Kilohertz gravitational waves from binary neutron star mergers. II. Inference of postmerger signals with the Einstein Telescope"
+    journal: "Phys. Rev. D"
+    year:    "2025"
+    ref:     "112, 124001"
+    arxiv:     "2205.09979"
+    arxiv_url: "https://arxiv.org/abs/2205.09979"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.112.124001"
+
+  - authors: "S. Borhanian, B. S. Sathyaprakash"
+    title:   "Listening to the Universe with next generation ground-based gravitational-wave detectors"
+    journal: "Phys. Rev. D"
+    year:    "2024"
+    ref:     "110, 083040"
+    arxiv:     "2202.11048"
+    arxiv_url: "https://arxiv.org/abs/2202.11048"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.110.083040"
+
+  - authors: "R. Magee, S. Borhanian"
+    title:   "Observing Scenarios for the Next Decade of Early Warning Detection of Binary Neutron Stars"
+    journal: "Astrophys. J."
+    year:    "2022"
+    ref:     "935, 139"
+    arxiv:     "2201.11841"
+    arxiv_url: "https://arxiv.org/abs/2201.11841"
+    doi_url:   "https://doi.org/10.3847/1538-4357/ac7f33"
+
+  - authors: "M. Evans et al."
+    title:   "A Horizon Study for Cosmic Explorer: Science, Observatories, and Community"
+    journal: "Preprint"
+    year:    "2021"
+    arxiv:     "2109.09882"
+    arxiv_url: "https://arxiv.org/abs/2109.09882"
+
+  - authors: "K. K. Y. Ng, S. Chen, B. Goncharov, U. Dupletsa, S. Borhanian, M. Branchesi et al."
+    title:   "On the Single-event-based Identification of Primordial Black Hole Mergers at Cosmological Distances"
+    journal: "Astrophys. J. Lett."
+    year:    "2022"
+    ref:     "931, L12"
+    arxiv:     "2108.07276"
+    arxiv_url: "https://arxiv.org/abs/2108.07276"
+    doi_url:   "https://doi.org/10.3847/2041-8213/ac6bea"
+
+  - authors: "R. Smith et al."
+    title:   "Bayesian Inference for Gravitational Waves from Binary Neutron Star Mergers in Third Generation Observatories"
+    journal: "Phys. Rev. Lett."
+    year:    "2021"
+    ref:     "127, 081102"
+    arxiv:     "2103.12274"
+    arxiv_url: "https://arxiv.org/abs/2103.12274"
+    doi_url:   "https://doi.org/10.1103/PhysRevLett.127.081102"
+
+  - authors: "B. Ewing, S. Sachdev, S. Borhanian, B. S. Sathyaprakash"
+    title:   "Archival searches for stellar-mass binary black holes in LISA data"
+    journal: "Phys. Rev. D"
+    year:    "2021"
+    ref:     "103, 023025"
+    arxiv:     "2011.03036"
+    arxiv_url: "https://arxiv.org/abs/2011.03036"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.103.023025"
+
+  - authors: "S. Borhanian"
+    title:   "GWBENCH: a novel Fisher information package for gravitational-wave benchmarking"
+    journal: "Class. Quant. Grav."
+    year:    "2021"
+    ref:     "38, 175014"
+    arxiv:     "2010.15202"
+    arxiv_url: "https://arxiv.org/abs/2010.15202"
+    doi_url:   "https://doi.org/10.1088/1361-6382/ac1618"
+
+  - authors: "LIGO Scientific, Virgo collaboration"
+    title:   "Tests of general relativity with binary black holes from the second LIGO-Virgo gravitational-wave transient catalog"
+    journal: "Phys. Rev. D"
+    year:    "2021"
+    ref:     "103, 122002"
+    arxiv:     "2010.14529"
+    arxiv_url: "https://arxiv.org/abs/2010.14529"
+    doi_url:   "https://doi.org/10.1103/PhysRevD.103.122002"
+
+  - authors: "S. Borhanian, A. Dhani, A. Gupta, K. G. Arun, B. S. Sathyaprakash"
+    title:   "Dark Sirens to Resolve the Hubble–Lemaître Tension"
+    journal: "Astrophys. J. Lett."
+    year:    "2020"
+    ref:     "905, L28"
+    arxiv:     "2007.02883"
+    arxiv_url: "https://arxiv.org/abs/2007.02883"
+    doi_url:   "https://doi.org/10.3847/2041-8213/abcaf5"
+
+  - authors: "A. Gupta, S. Datta, S. Kastha, S. Borhanian, K. G. Arun, B. S. Sathyaprakash"
+    title:   "Multiparameter tests of general relativity using multiband gravitational-wave observations"
+    journal: "Phys. Rev. Lett."
+    year:    "2020"
+    ref:     "125, 201101"
+    arxiv:     "2005.09607"
+    arxiv_url: "https://arxiv.org/abs/2005.09607"
+    doi_url:   "https://doi.org/10.1103/PhysRevLett.125.201101"
+
+  - authors: "S. Borhanian, K. G. Arun, H. P. Pfeiffer, B. S. Sathyaprakash"
+    title:   "Comparison of post-Newtonian mode amplitudes with numerical relativity simulations of binary black holes"
+    journal: "Class. Quant. Grav."
+    year:    "2020"
+    ref:     "37, 065006"
+    arxiv:     "1901.08516"
+    arxiv_url: "https://arxiv.org/abs/1901.08516"
+    doi_url:   "https://doi.org/10.1088/1361-6382/ab6a21"

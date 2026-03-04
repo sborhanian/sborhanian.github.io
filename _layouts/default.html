@@ -16,14 +16,15 @@
   <!-- ── SIDEBAR ──────────────────────────────────────────────────────── -->
   <aside class="sidebar">
 
-    <div class="sidebar-photo">
-      <img src="{{ '/assets/photo.jpeg' | relative_url }}" alt="{{ site.author.name }}" />
-    </div>
-
-    <div class="sidebar-identity">
-      <p class="sidebar-name">{{ site.author.name }}, {{ site.author.degree }}<p>
-      <p class="sidebar-eyebrow">{{ site.author.eyebrow }}</p>
-      <p class="sidebar-sub">{{ site.author.subtitle }}</p>
+    <div class="sidebar-profile">
+      <div class="sidebar-photo">
+        <img src="{{ '/assets/photo.jpeg' | relative_url }}" alt="{{ site.author.name }}" />
+      </div>
+      <div class="sidebar-identity">
+        <p class="sidebar-name">{{ site.author.name }}, {{ site.author.degree }}</p>
+        <p class="sidebar-eyebrow">{{ site.author.eyebrow }}</p>
+        <p class="sidebar-sub">{{ site.author.subtitle }}</p>
+      </div>
     </div>
 
     <div class="sidebar-links">

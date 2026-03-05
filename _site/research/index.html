@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ssohrab Borhanian, Ph.D.</title>
+  <title>Projects | Ssohrab Borhanian, Ph.D.</title>
   <meta name="description" content="Scientific software engineer and gravitational-wave physicist." />
   <link rel="stylesheet" href="/assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,55 +71,99 @@
     <nav id="navbar">
       <div class="nav-inner">
         <ul class="nav-links">
-          <li><a href="/" class="active">About</a></li>
+          <li><a href="/" >About</a></li>
           <li><a href="/cv/" >CV</a></li>
           <li><a href="/software/" >Software</a></li>
-          <li><a href="/research/" >Research</a></li>
+          <li><a href="/research/" class="active">Research</a></li>
           <li><a href="/publications/" >Publications</a></li>
         </ul>
       </div>
     </nav>
 
     <main>
-  <!-- ── ABOUT ───────────────────────────────────────────────────────── -->
   <section class="section section--top">
     <div class="container">
-      <h2 class="section-title">About</h2>
-      <div class="about-grid">
-        <div class="about-text">
+      <h2 class="section-title">Research Projects</h2>
+      <div class="projects-grid">
+
+        
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">gwbench</h3>
+              <p class="project-tagline">Gravitational-Wave Detector & Network Benchmarking</p>
+            </div>
+            <span class="project-badge">
+              Lead Developer
+            </span>
+          </div>
+          <p class="project-period">2019 – Present</p>
           
-            <p>I'm an astrophysicist and scientific software developer with nearly a decade of experience studying gravitational waves. The focus of my work lies on the development of open-source computational tools to investigate the science case for next-generation gravitational-wave detectors as well as to enable the analysis of data from current and future facilities. I have a strong commitment to develop easy-to-use, community-facing software that fosters reproducibility.</p>
+          <ul>
+            
+            <li>Open-source Python package for Fisher-Matrix-based benchmarking of gravitational-wave detector networks.</li>
+            
+            <li>Adopted as a primary analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.</li>
+            
+            <li>Highly modular and streamlined user experience for large-scale computational studies.</li>
+            
+            <li>Documented, packaged, and maintained for long-term community use; peer-reviewed publication.</li>
+            
+          </ul>
           
-            <p>In particular, I developed and maintain <strong>gwbench</strong>, a Python package that enables rapid benchmarking and forecasting of the science capabilities of gravitational-wave detectors through the Fisher-information formalism. It has been widely adopted in our research community and functions as one of the primary analysis tools for the Einstein Telescope and Cosmic Explorer collaborations.</p>
           
-            <p>Besides, I am interested in developing efficient and accurate methods to detect and analyze gravitational-wave signals, particularly with an eye towards the challenges that next-generation detectors data will present. In this context, I am investigating the use of ML techniques through neural posterior estimation to accelerate the analysis of long-range, gravitational-wave signals to provide efficient early-warning alerts to the wider astronomy community and thereby facilitate multi-messenger observations of compact binary mergers.</p>
-          
-            <p>Recently, I have been studying and exploring Apple's programming ecosystem, revolving around Swift and SwiftUI. I am planning to release a couple of open-source iOS and macOS apps that I want for my day-to-day use and which I hope can be useful to other users as well.</p>
+          <div class="project-links">
+            
+            <a href="https://gitlab.com/sborhanian/gwbench" target="_blank" rel="noopener" class="tag-link">
+              GitLab
+            </a>
+            
+            <a href="https://arxiv.org/abs/2010.15202" target="_blank" rel="noopener" class="tag-link">
+              Class. Quant. Grav. 38 (2021) — arXiv:2010.15202
+            </a>
+            
+          </div>
           
         </div>
-        <div class="about-stats">
-          
-          <div class="stat-card">
-            <span class="stat-number">25</span>
-            <span class="stat-label">Publications</span>
+        
+        <div class="project-card">
+          <div class="project-header">
+            <div>
+              <h3 class="project-name">xkn</h3>
+              <p class="project-tagline">Kilonova Modeling Framework</p>
+            </div>
+            <span class="project-badge project-badge-secondary">
+              Core Developer
+            </span>
           </div>
+          <p class="project-period">2021 – 2023</p>
           
-          <div class="stat-card">
-            <span class="stat-number">3700+</span>
-            <span class="stat-label">Citations</span>
-          </div>
+          <ul>
+            
+            <li>Python package to generate kilonova light curves from binary neutron star mergers.</li>
+            
+            <li><em>Key contributions:</em> Implementation of accessible user interface and optimization for computational efficiency.</li>
+            
+            <li>Documented, packaged, and maintained for long-term community use; peer-reviewed publication.</li>
+            
+          </ul>
           
-          <div class="stat-card">
-            <span class="stat-number">20+</span>
-            <span class="stat-label">Talks & Seminars</span>
-          </div>
           
-          <div class="stat-card">
-            <span class="stat-number">9</span>
-            <span class="stat-label">Years Research</span>
+          <div class="project-links">
+            
+            <a href="https://github.com/GiacomoRicigliano/xkn" target="_blank" rel="noopener" class="tag-link">
+              GitHub
+            </a>
+            
+            <a href="https://arxiv.org/abs/2311.15709" target="_blank" rel="noopener" class="tag-link">
+              MNRAS 529 (2024) 647-663 — arXiv:2311.15709
+            </a>
+            
           </div>
           
         </div>
+        
+
       </div>
     </div>
   </section>

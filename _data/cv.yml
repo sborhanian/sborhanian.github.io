@@ -2,17 +2,10 @@
 # Each paragraph may contain inline HTML (bold, em, etc.).
 about:
   paragraphs:
-    - "I am a physicist and open-source software developer working at the intersection
-       of gravitational-wave science and scientific computing. With nearly a decade of
-       academic research experience and a deep commitment to reproducible,
-       community-facing software, I build tools that enable large-scale science."
-    - "My flagship project, <strong>gwbench</strong>, has been adopted as a primary
-       analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.
-       I am an active member of the gravitational-wave community, with
-       <strong>24 peer-reviewed publications</strong> and over
-       <strong>2,900 citations</strong>."
-    - "I thrive in collaborative environments, communicate technical ideas fluently
-       across disciplines, and adapt quickly to new tools and challenges."
+    - "I'm an astrophysicist and scientific software developer with nearly a decade of experience studying gravitational waves. The focus of my work lies on the development of open-source computational tools to investigate the science case for next-generation gravitational-wave detectors as well as to enable the analysis of data from current and future facilities. I have a strong commitment to develop easy-to-use, community-facing software that fosters reproducibility."
+    - "In particular, I developed and maintain <strong>gwbench</strong>, a Python package that enables rapid benchmarking and forecasting of the science capabilities of gravitational-wave detectors through the Fisher-information formalism. It has been widely adopted in our research community and functions as one of the primary analysis tools for the Einstein Telescope and Cosmic Explorer collaborations."
+    - "Besides, I am interested in developing efficient and accurate methods to detect and analyze gravitational-wave signals, particularly with an eye towards the challenges that next-generation detectors data will present. In this context, I am investigating the use of ML techniques through neural posterior estimation to accelerate the analysis of long-range, gravitational-wave signals to provide efficient early-warning alerts to the wider astronomy community and thereby facilitate multi-messenger observations of compact binary mergers."
+    - "Recently, I have been studying and exploring Apple's programming ecosystem, revolving around Swift and SwiftUI. I am planning to release a couple of open-source iOS and macOS apps that I want for my day-to-day use and which I hope can be useful to other users as well."
 
 # ── Experience ────────────────────────────────────────────────────────────────
 # bullets are optional (omit the key to skip the list).
@@ -56,7 +49,7 @@ experience:
 
 # ── Open Source Projects ──────────────────────────────────────────────────────
 # badge_secondary: true makes the badge grey instead of blue.
-projects:
+software:
   - name:   "gwbench"
     title:  "Gravitational-Wave Detector & Network Benchmarking"
     badge:  "Lead Developer"
@@ -92,6 +85,44 @@ projects:
         url:   "https://github.com/GiacomoRicigliano/xkn"
       - label: "MNRAS 529 (2024) 647-663 — arXiv:2311.15709"
         url:   "https://arxiv.org/abs/2311.15709"
+
+research:
+  - name:   "gwbench"
+    title:  "Gravitational-Wave Detector & Network Benchmarking"
+    badge:  "Lead Developer"
+    dates:  "2019 – Present"
+    bullets:
+      - "Open-source Python package for Fisher-Matrix-based benchmarking of
+         gravitational-wave detector networks."
+      - "Adopted as a primary analysis tool by the Einstein Telescope and
+         Cosmic Explorer collaborations."
+      - "Highly modular and streamlined user experience for large-scale
+         computational studies."
+      - "Documented, packaged, and maintained for long-term community use;
+         peer-reviewed publication."
+    links:
+      - label: "GitLab"
+        url:   "https://gitlab.com/sborhanian/gwbench"
+      - label: "Class. Quant. Grav. 38 (2021) — arXiv:2010.15202"
+        url:   "https://arxiv.org/abs/2010.15202"
+
+  - name:            "xkn"
+    title:           "Kilonova Modeling Framework"
+    badge:           "Core Developer"
+    badge_secondary: true
+    dates:           "2021 – 2023"
+    bullets:
+      - "Python package to generate kilonova light curves from binary neutron star mergers."
+      - "<em>Key contributions:</em> Implementation of accessible user interface and
+         optimization for computational efficiency."
+      - "Documented, packaged, and maintained for long-term community use;
+         peer-reviewed publication."
+    links:
+      - label: "GitHub"
+        url:   "https://github.com/GiacomoRicigliano/xkn"
+      - label: "MNRAS 529 (2024) 647-663 — arXiv:2311.15709"
+        url:   "https://arxiv.org/abs/2311.15709"
+
 
 # ── Education ─────────────────────────────────────────────────────────────────
 education:

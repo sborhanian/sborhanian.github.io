@@ -34,7 +34,24 @@ bundle install
 # 2. Serve locally with live reload
 bundle exec jekyll serve --livereload
 
-# 3. Open http://localhost:4000
+# 3. Open
+http://localhost:4000
+```
+
+#### Set correct local ruby version
+```
+# 1. Install rbenv
+brew install rbenv ruby-build
+
+# 2. Add rbenv to your shell (once)
+rbenv init
+
+# 3. Install a modern Ruby
+rbenv install 3.3.6
+
+# 4. Pin that version to this project folder
+cd /path/to/gh_pages_jekyll
+rbenv local 3.3.6
 ```
 
 ---

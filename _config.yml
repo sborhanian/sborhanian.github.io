@@ -14,13 +14,10 @@ author:
   eyebrow: "Gravitational-Wave Astrophysicist<br>Scientific Software Engineer<br>Quantative Data Analyst"
   subtitle: "Postdoctoral Researcher<br>Open-source contributor<br>Python | JAX | ML | Swift/SwftUI"
   email:   "sborhanian@gmail.com"
-  linkedin_url:    "https://www.linkedin.com/in/ssohrab-borhanian"
-  linkedin_handle: "ssohrab-borhanian"
+  linkedin_url:  "https://www.linkedin.com/in/ssohrab-borhanian"
   gitlab_url:    "https://gitlab.com/sborhanian"
-  gitlab_handle: "sborhanian"
   inspirehep_url: "https://inspirehep.net/authors/1730808"
   orcid_url:     "https://orcid.org/0000-0003-0161-6109"
-  orcid_handle:  "0000-0003-0161-6109"
   scholar_url:   "https://scholar.google.com/citations?hl=en&user=mPQDEdoAAAAJ"
   location:      "Milan, Italy"
   employer:      "University of Milano-Bicocca"
@@ -37,7 +34,7 @@ stats:
     label: "Years Research"
 
 # ── Build ─────────────────────────────────────────────────────────────────────
-permalink: pretty   # /experience.html → /experience/
+permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM

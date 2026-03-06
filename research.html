@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Projects"
+title: "Research"
 ---
 
 <main>
@@ -12,10 +12,7 @@ title: "Projects"
         {% for project in site.data.cv.research %}
         <div class="project-card">
           <div class="project-header">
-            <div>
-              <h3 class="project-name">{{ project.title }}</h3>
-              <br>
-            </div>
+            <h3 class="project-name">{{ project.title }}</h3>
           </div>
           <p>{{project.text}}</p>
           {% if project.bullets %}

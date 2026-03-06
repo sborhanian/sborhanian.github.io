@@ -74,13 +74,8 @@ ul { list-style: none; }
   background: rgba(255,255,255,0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--border);
   z-index: 100;
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-#navbar.scrolled {
-  border-bottom-color: var(--border);
-  box-shadow: var(--shadow-sm);
 }
 
 .nav-inner {
@@ -164,8 +159,6 @@ ul { list-style: none; }
   color: var(--text);
   letter-spacing: -0.01em;
 }
-.sidebar-name .accent { color: var(--accent); }
-
 .sidebar-eyebrow {
   font-size: 0.68rem;
   font-weight: 600;
@@ -244,10 +237,6 @@ ul { list-style: none; }
 /* ── SECTIONS ──────────────────────────────────────────────────────────── */
 .section {
   padding-block: 72px;
-}
-
-.section-alt {
-  background: var(--bg-alt);
 }
 
 .section--top {
@@ -578,83 +567,6 @@ ul { list-style: none; }
   font-weight: 500;
 }
 
-/* ── SKILLS ────────────────────────────────────────────────────────────── */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
-}
-
-.skills-category {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-tag {
-  font-size: 0.85rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  color: var(--text);
-  padding: 5px 12px;
-  border-radius: 6px;
-  font-weight: 400;
-}
-.skill-tag em {
-  color: var(--muted-light);
-  font-style: normal;
-  font-size: 0.8em;
-}
-
-/* ── CONTACT ───────────────────────────────────────────────────────────── */
-.contact-inner {
-  text-align: center;
-}
-
-.contact-sub {
-  color: var(--muted);
-  font-size: 1rem;
-  margin-bottom: 40px;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 22px;
-  font-size: 0.9rem;
-  color: var(--text);
-  font-weight: 500;
-  box-shadow: var(--shadow-sm);
-  transition: all var(--transition);
-}
-.contact-card svg { width: 20px; height: 20px; flex-shrink: 0; color: var(--accent); }
-.contact-card:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
 /* ── CV PAGE ───────────────────────────────────────────────────────────── */
 .cv-download-bar {
   display: flex;
@@ -764,8 +676,6 @@ footer {
   color: var(--muted);
   padding-inline: 24px;
 }
-
-.footer-muted { color: var(--muted-light); }
 
 /* ── RESPONSIVE ────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {

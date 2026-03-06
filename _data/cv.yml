@@ -207,58 +207,6 @@ education:
     honors:
       - "Only double degree in cohort"
 
-# ── Skills ────────────────────────────────────────────────────────────────────
-# All items are plain strings. Use parentheses for notes, e.g. "German (fluent)".
-skills:
-  - category: "Programming"
-    items:
-      - "Python"
-      - "Swift / SwiftUI"
-      - "Fortran"
-      - "Java"
-
-  - category: "Python Ecosystem"
-    items:
-      - "JAX"
-      - "NumPy"
-      - "SciPy"
-      - "Pandas"
-      - "Matplotlib"
-      - "h5py"
-      - "joblib"
-      - "multiprocessing"
-      - "setuptools"
-
-  - category: "Developer Tools"
-    items:
-      - "Git"
-      - "Linux"
-      - "HPC (SLURM / HTCondor)"
-      - "Mathematica"
-      - "MATLAB"
-      - "LaTeX"
-
-  - category: "Data Analysis"
-    items:
-      - "Machine Learning"
-      - "Bayesian Inference"
-      - "Monte Carlo Methods"
-      - "Time Series Analysis"
-
-  - category: "Languages"
-    items:
-      - "German (fluent)"
-      - "English (fluent)"
-      - "Persian (fluent)"
-      - "French (basic)"
-      - "Italian (basic)"
-
-  - category: "Communication"
-    items:
-      - "20+ international talks"
-      - "24 publications"
-      - "2900+ citations"
-
 # ── Publications ───────────────────────────────────────────────────────────────
 # Sourced from my_publications.bbl. Fields: authors, title, journal, year,
 # ref (volume + page), arxiv (ID only), arxiv_url, doi_url.

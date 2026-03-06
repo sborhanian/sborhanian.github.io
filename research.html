@@ -6,21 +6,18 @@ title: "Projects"
 <main>
   <section class="section section--top">
     <div class="container">
-      <h2 class="section-title">Research Projects</h2>
+      <h2 class="section-title">Research</h2>
       <div class="projects-grid">
 
         {% for project in site.data.cv.research %}
         <div class="project-card">
           <div class="project-header">
             <div>
-              <h3 class="project-name">{{ project.name }}</h3>
-              <p class="project-tagline">{{ project.title }}</p>
+              <h3 class="project-name">{{ project.title }}</h3>
+              <br>
             </div>
-            <span class="project-badge{% if project.badge_secondary %} project-badge-secondary{% endif %}">
-              {{ project.badge }}
-            </span>
           </div>
-          <p class="project-period">{{ project.dates }}</p>
+          <p>{{project.text}}</p>
           {% if project.bullets %}
           <ul>
             {% for bullet in project.bullets %}

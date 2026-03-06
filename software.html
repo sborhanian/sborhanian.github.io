@@ -12,16 +12,16 @@ title: "Projects"
         {% for project in site.data.cv.software %}
         <div class="project-card">
           <div class="project-header">
-            <div>
-              <h3 class="project-name">{{ project.name }}</h3>
-              <p class="project-tagline">{{ project.title }}</p>
-            </div>
+            <h3 class="project-name">{{ project.name }}</h3>
             <span class="project-badge{% if project.badge_secondary %} project-badge-secondary{% endif %}">
               {{ project.badge }}
             </span>
           </div>
+          <p class="project-tagline">{{ project.title }}</p>
           <p class="project-period">{{ project.dates }}</p>
+          <p>{{project.text}}</p>
           {% if project.bullets %}
+          <br>
           <ul>
             {% for bullet in project.bullets %}
             <li>{{ bullet }}</li>

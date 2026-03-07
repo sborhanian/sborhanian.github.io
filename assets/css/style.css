@@ -692,19 +692,25 @@ footer {
 }
 
 @media (max-width: 800px) {
-  /* Stack wrapper: sidebar on top, main content below */
+  /* Stack wrapper: sidebar goes to the bottom */
   .site-wrapper { flex-direction: column; }
-  .site-main { margin-left: 0; padding-top: var(--nav-h); }
+  .site-main  { margin-left: 0; padding-top: var(--nav-h); order: 1; }
+  .sidebar    { order: 2; }
   #navbar { left: 0; }
 
-  /* Sidebar becomes a horizontal top bar */
+  /* Make navbar scrollable */
+  .nav-inner { padding-inline: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .nav-links { flex-shrink: 0; }
+  .nav-links a { white-space: nowrap; }
+
+  /* Sidebar becomes a horizontal bottom bar */
   .sidebar {
     position: static;
     width: 100%;
     height: auto;
-    margin-top: var(--nav-h);  /* clear the fixed nav */
     border-right: none;
-    border-bottom: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    border-bottom: none;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 20px;

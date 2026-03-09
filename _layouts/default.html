@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
-<div class="site-wrapper">
+<div class="site-wrapper{% if page.url == '/' %} page-home{% endif %}">
 
   <!-- ── SIDEBAR ──────────────────────────────────────────────────────── -->
   <aside class="sidebar">
@@ -82,13 +82,13 @@
 
     {{ content }}
 
-    <footer>
-      <div class="footer-inner">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
-      </div>
-    </footer>
-
   </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+    </div>
+  </footer>
 
 </div>
 </body>

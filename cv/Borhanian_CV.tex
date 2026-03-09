@@ -1,0 +1,296 @@
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+% Software Engineer Resume -- Ssohrab Borhanian
+% Requires only standard LaTeX packages. Compile with pdflatex or xelatex.
+
+\documentclass[10pt, a4paper]{article}
+
+% ── Encoding & fonts ──────────────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}          % improved vector version of Computer Modern
+\usepackage{fontawesome5}
+
+% ── Page layout ───────────────────────────────────────────────────────────────
+\usepackage[a4paper,
+            left=1.8cm, right=1.8cm,
+            top=1.4cm,  bottom=1.6cm]{geometry}
+
+% ── Typography ────────────────────────────────────────────────────────────────
+\usepackage{microtype}
+
+% ── Colors ────────────────────────────────────────────────────────────────────
+\usepackage[dvipsnames]{xcolor}
+\definecolor{accent}{RGB}{25, 95, 170}      % deep blue for headings/links
+% \definecolor{accent}{RGB}{0, 0, 0}      % deep blue for headings/links
+\definecolor{muted}{RGB}{90, 90, 90}        % dark gray for secondary text
+
+% ── Hyperlinks ────────────────────────────────────────────────────────────────
+\usepackage[colorlinks=true,
+            urlcolor=accent,
+            linkcolor=accent]{hyperref}
+
+% ── Section headings ──────────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\color{accent}\large\bfseries}
+  {}{0em}{\MakeUppercase}
+  [\vspace{-8pt}\color{accent}\rule{\linewidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+% ── Lists ─────────────────────────────────────────────────────────────────────
+\usepackage{enumitem}
+\setlist[itemize]{
+  leftmargin=1.6em,
+  itemsep=0pt,
+  parsep=0pt,
+  topsep=2pt,
+  label=\small$\bullet$
+}
+
+% ── Tables ────────────────────────────────────────────────────────────────────
+\usepackage{tabularx}
+\usepackage{array}
+
+% ── Misc ──────────────────────────────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{plain}
+
+%──────────────────────────────────────────────────────────────────────────────
+% CUSTOM COMMANDS
+%──────────────────────────────────────────────────────────────────────────────
+
+% \cventry{Role}{Organization}{Location}{Date range}
+\newcommand{\cventry}[4]{%
+  \textbf{#1}                      \hfill {\color{muted}\small\textit{#4}} \\[2pt]
+  {\color{muted}\small\textit{#2}} \hfill {\color{muted}\small\textit{#3}}
+  % \begin{tabularx}{\linewidth}{@{}X @{}r}
+  %   \textbf{#1}                      & {\color{muted}\small\textit{#4}} \\
+  %   {\color{muted}\small\textit{#2}} & {\color{muted}\small\textit{#3}}
+  % \end{tabularx}%
+}
+
+% \cvskill{Category}{Values}
+\newcommand{\cvskill}[2]{%
+  \noindent
+  % \begin{tabularx}{\linewidth}{@{}>{\bfseries\small}p{3.4cm} X@{}}
+    % #1 & {\small #2}
+    \begin{tabularx}{\linewidth}{@{}p{3.2cm} X@{}}
+    \textbf{\small #1} & {\small #2}
+  \end{tabularx}\raggedright%
+}
+
+\newcommand{\tpc}{\textperiodcentered}
+
+\pagenumbering{gobble}
+
+%──────────────────────────────────────────────────────────────────────────────
+\begin{document}
+%──────────────────────────────────────────────────────────────────────────────
+
+% ── HEADER ───────────────────────────────────────────────────────────────────
+\begin{center}
+  {\Huge\bfseries Ssohrab Borhanian, Ph.D.}\\[3pt]
+  % {\large\color{accent} Scientific Software Engineer \,$\cdot$\, Python Developer}\\[3pt]
+  {\small\color{muted}
+    % Steglitzer Damm 113E, 12169 Berlin, Germany
+    % ~\tpc~
+    % \href{tel:+4915251705163}{+49\,152\,51705163}
+    % ~\tpc~
+    EU Citizen
+    ~|~
+    \faEnvelope~\href{mailto:sborhanian@gmail.com}{sborhanian@gmail.com}
+    ~|~
+    \faGlobe~\href{https://sborhanian.github.io/}{sborhanian.github.io}
+    ~|~
+    \faLinkedin~\href{https://www.linkedin.com/in/ssohrab-borhanian}{ssohrab-borhanian}
+    ~|~
+    \faGitlab~\href{https://gitlab.com/sborhanian}
+    {sborhanian}
+  }
+\end{center}
+
+\vspace{1pt}
+
+% ── PROFILE ──────────────────────────────────────────────────────────────────
+\section{Executive Summary}
+\begin{itemize}
+  \item Open-source, scientific software developer with background in Python and ML tools.
+  \item Physicist with 10+ years of academic expertise in gravitational-wave astrophysics and large-scale collaborations.
+  \item Avid collaborator and communicator with strong academic publication and presentation record.
+  \item Problem-solver and keen learner at heart; highly adaptable to new environments and challenges.
+\end{itemize}
+
+% ── EDUCATION ────────────────────────────────────────────────────────────────
+\section{Education}
+
+\cventry%
+  {The Pennsylvania State University }%
+  {Ph.D.\ and M.Sc.\ in Physics~\tpc~ Fulbright Scholar~\tpc~ Peter Clay Eklund Lecturing Award}%
+  {State College, PA, USA}%
+  {2014 -- 2021}
+
+  % \begin{itemize}
+  %   \item {\small Dissertation: \textit{Compact Binaries as Astrophysical Laboratories and the Promise of Third-Generation Detectors}}
+  % \end{itemize}
+
+\vspace{6pt}
+\cventry%
+  {Technical University of Berlin}%
+  {B.Sc.\ in Physics and Mathematics ~\tpc~ Only double degree in my cohort}%
+  {Berlin, Germany}%
+  {2009 -- 2014}
+  
+  % \begin{itemize}
+  %   \item {\small Physics specialization: Astrophysics --- Mathematics specialization: Differential Geometry}
+  % \end{itemize}
+
+% ── OPEN SOURCE PROJECTS ─────────────────────────────────────────────────────
+\section{Open Source Projects}
+
+\cventry%
+  {\textsc{gwbench} --- Gravitational-Wave Detector and Network Benchmarking}%
+  {Lead Developer and Maintainer ~\tpc~ 
+   \href{https://gitlab.com/sborhanian/gwbench}{\faGitlab}  ~\tpc~ 
+   \href{https://arxiv.org/abs/2010.15202}{\textit{Class.~Quant.~Grav.}~38,~2021, [arXiv:2010.15202]} }%
+  {}%
+  {2019 -- Present}
+\begin{itemize}
+  \item Open-source, Python package for Fisher-Matrix-based benchmarking of gravitational-wave detector networks.
+  \item Adopted as a primary analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.
+  \item Highly modular and streamlined user experience for large-scale computational studies.
+  \item Documented, packaged, and maintained for long-term community use; peer-reviewed publication.
+\end{itemize}
+
+\vspace{3pt}
+\cventry%
+  {\textsc{xkn} --- Kilonova Modeling Framework}%
+  {Core Developer ~\tpc~ \href{https://github.com/GiacomoRicigliano/xkn}{\faGithub}
+   ~\tpc~
+   \href{https://arxiv.org/abs/2311.15709}{\textit{Mon.~Not.~Roy.~Astron.~Soc.}~529~(2024)~1,~647-663,, [arXiv:2311.15709]} }%
+  {}%
+  {2021 -- 2023}
+\begin{itemize}
+  \item Python package to generate kilonova light curves from binary neutron star mergers.
+  \item {\em \color{muted} Key contributions}: Implementation of accessible user interface and optimization for computational efficiency.
+  \item Documented, packaged, and maintained for long-term community use; peer-reviewed publication.
+\end{itemize}
+
+% ── EXPERIENCE ───────────────────────────────────────────────────────────────
+\section{Experience}
+
+\cventry%
+  {Postdoctoral Researcher}%
+  {Universit\`a degli Studi di Milano-Bicocca
+  ~\tpc~ Research group: Prof.\ Davide\ Gerosa}%
+  {Milan, Italy}%
+  {09/2023 -- Present}
+\begin{itemize}
+  \item Developing ML-based and non-parametric, hierarchical gravitational-wave data analysis pipelines.
+  % \item Developing a ML-based data analysis pipelines for long-duration gravitational-wave signal detection and parameter estimation
+  % \item Developing a fast and efficient, non-parametric framework for astrophysical population inference of gravitational-wave sources
+  % \item Assessed of impact of facility timing uncertainties on the science case of third-generation gravitational-wave detectors
+\end{itemize}
+
+\vspace{6pt}
+\cventry%
+  {Postdoctoral Researcher}%
+  {Friedrich-Schiller-Universit\"at Jena ~\tpc~ Research group: Prof.\ Sebastiano\ Bernuzzi}%
+  {Jena, Germany}%
+  {06/2021 -- 08/2023}
+\begin{itemize}
+  \item Contributed to and extended the functionality of the open-source Python packages \textsc{xkn} and \textsc{gwbench}.
+  % \item Extended \textsc{gwbench}: numerical improvements, bug fixes, and expansion of the functionality via additional features
+  % \item Contributed as a core developer to the \textsc{xkn} Python package for kilonova light-curve modeling from binary neutron star mergers
+  % \item Contributed to core modules of the \textsc{bajes} Python code for Bayesian inference of gravitational-wave sources
+\end{itemize}
+
+\vspace{6pt}
+\cventry%
+  {Graduate Researcher (Ph.D.)}%
+  {The Pennsylvania State University ~\tpc~ Advisor: Prof.\ Bangalore S.\ Sathyaprakash}%
+  {State College, PA, USA}%
+  {08/2016 -- 05/2021}
+\begin{itemize}
+  \item Developed \textsc{gwbench} as a modular Python framework for large-scale science case studies.
+  \item Investigated the science case of third-generation gravitational-wave detectors via comprehensive trade studies.
+  \item Investigated numerical relativity waveforms for a post-Newtonian signature in the strong-field regime.
+  % \item Designed and built \textsc{gwbench} from scratch as a modular Python framework
+  %       for Fisher-information-based gravitational-wave detector benchmarking and science case studies
+  % \item Conducted a comprehensive computational trade study of third-generation
+  %       gravitational-wave detector geometries and network configurations for the Einstein Telescope and Cosmic Explorer
+  % \item Developed numerical and analytic models for binary black hole waveforms and
+  %       tests of general relativity
+  % \item Member of the LIGO Scientific Collaboration and Cosmic Explorer Consortium
+\end{itemize}
+
+\vspace{6pt}
+\cventry%
+  {Research Intern}%
+  {Duke University~\tpc~ RISE Worldwide Scholarship~\tpc~ Advisor: Prof.\ Kate\ Scholberg}%
+  {Durham, NC, USA}%
+  {08/2012 -- 09/2012}
+% \begin{itemize}
+%   \item Implemented numerical simulations of pre-supernova neutrino emission as an
+%         early-warning signal for stellar collapse events
+% \end{itemize}
+
+% ── SKILLS ───────────────────────────────────────────────────────────────────
+\section{Technical Skills}
+\cvskill{Programming}{Python, Swift, SwiftUI, Fortran, Java.}
+\cvskill{Python Ecosystem}{JAX, NumPy, SciPy, Pandas, Matplotlib, h5py, joblib, multiprocessing, setuptools.}
+\cvskill{Developer Tools}{Git, Linux, HPC clusters (SLURM/HTCondor), Mathematica, MATLAB, \LaTeX{}.}
+\cvskill{Data Analysis}{Machine Learning, Bayesian inference, Monte Carlo methods, time series analysis.}
+
+\section{Soft Skills}
+\cvskill{Communication}{20+ presentations and invited seminars at international conferences and universities.}
+\cvskill{Technical Writing}{\href{https://inspirehep.net/authors/1730808}{25 academic publications} (3700+ citations).}
+\cvskill{Languages}{\textit{Fluent:} German, English, Persian; \quad \textit{Basic:} French, Italian.}
+
+
+% ── SELECTED HONORS ──────────────────────────────────────────────────────────
+% \section{Selected Honors}
+
+% \begin{tabularx}{\linewidth}{@{}X r@{}}
+%   \textbf{Peter Clay Eklund Lecturing Award},
+%     \textit{\small Department of Physics, Pennsylvania State University}
+%     & \small 2021 \\[3pt]
+%   \textbf{Fulbright Scholarship},
+%     \textit{\small German-American Fulbright Commission}
+%     & \small 2014 \\[3pt]
+%   \textbf{RISE Worldwide Scholarship},
+%     \textit{\small German Academic Exchange Service (DAAD)}
+%     & \small 2012 \\[3pt]
+%   \textbf{Acknowledgement for Excellent Achievements in Physics},
+%     \textit{\small German Physical Society}
+%     & \small 2009 \\
+% \end{tabularx}
+
+% ── SELECTED PUBLICATIONS ────────────────────────────────────────────────────
+% \section{Selected Publications}
+
+% \noindent\textbf{Borhanian} ---
+% \textsl{\textsc{gwbench}: a novel Fisher information package for gravitational wave benchmarking}\\
+% {\small \textit{Class.~Quant.~Grav.}~38~(2021)~17,~175014
+% \hfill \href{https://arxiv.org/abs/2010.15202}{arXiv:2010.15202}}
+
+% \vspace{3pt}
+% \noindent\textbf{Borhanian}, Sathyaprakash ---
+% \textit{Listening to the Universe with Next Generation Ground-Based GW Detectors}\\
+% {\small \textit{Phys.~Rev.~D}~110~(2024)~8,~083040
+% \hfill \href{https://arxiv.org/abs/2202.11048}{arXiv:2202.11048}}
+
+% \vspace{3pt}
+% \noindent\textbf{Borhanian}, Dhani, Gupta, Arun, Sathyaprakash ---
+% \textit{Dark Sirens to Resolve the Hubble–Lemaître Tension}\\
+% {\small \textit{Astrophys.~J.~Lett.}~905~(2020)~2,~L28
+% \hfill \href{https://arxiv.org/abs/2007.02883}{arXiv:2007.02883}}
+
+% \vspace{10pt}
+% {\small\color{muted}\textit{Full list of publications (incl.\ LIGO, Cosmic Explorer, 
+% and Einstein Telescope collaboration papers):}\\
+% \href{https://arxiv.org/search/?searchtype=author&query=borhanian}{\texttt{arxiv.org/search/?searchtype=author\&query=borhanian}}}
+
+%──────────────────────────────────────────────────────────────────────────────
+\end{document}

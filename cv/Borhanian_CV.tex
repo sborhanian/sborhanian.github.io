@@ -98,16 +98,17 @@
     % ~\tpc~
     % \href{tel:+4915251705163}{+49\,152\,51705163}
     % ~\tpc~
-    EU Citizen
-    ~|~
     \faEnvelope~\href{mailto:sborhanian@gmail.com}{sborhanian@gmail.com}
     ~|~
     \faGlobe~\href{https://sborhanian.github.io/}{sborhanian.github.io}
     ~|~
-    \faLinkedin~\href{https://www.linkedin.com/in/ssohrab-borhanian}{ssohrab-borhanian}
+    \href{https://www.linkedin.com/in/ssohrab-borhanian}{\faLinkedin}
+    ~
+    \href{https://github.com/sborhanian} {\faGithub}
+    ~
+    \href{https://gitlab.com/sborhanian} {\faGitlab}
     ~|~
-    \faGitlab~\href{https://gitlab.com/sborhanian}
-    {sborhanian}
+    EU Citizen
   }
 \end{center}
 
@@ -160,7 +161,6 @@
   \item Open-source, Python package for Fisher-Matrix-based benchmarking of gravitational-wave detector networks.
   \item Adopted as a primary analysis tool by the Einstein Telescope and Cosmic Explorer collaborations.
   \item Highly modular and streamlined user experience for large-scale computational studies.
-  \item Documented, packaged, and maintained for long-term community use; peer-reviewed publication.
 \end{itemize}
 
 \vspace{3pt}
@@ -174,7 +174,6 @@
 \begin{itemize}
   \item Python package to generate kilonova light curves from binary neutron star mergers.
   \item {\em \color{muted} Key contributions}: Implementation of accessible user interface and optimization for computational efficiency.
-  \item Documented, packaged, and maintained for long-term community use; peer-reviewed publication.
 \end{itemize}
 
 % ── EXPERIENCE ───────────────────────────────────────────────────────────────
@@ -187,7 +186,9 @@
   {Milan, Italy}%
   {09/2023 -- Present}
 \begin{itemize}
-  \item Developing ML-based and non-parametric, hierarchical gravitational-wave data analysis pipelines.
+  \item Developing \textsc{jax}-based ML-pipeline for gravitational-wave data analysis.
+  \item Extending the Python package \href{https://github.com/dgerosa/precession}{\textsc{precession}} to support \texttt{jit}-compilation and GPU-acceleration through \textsc{jax}.
+  \item Investigated the impact of facility timing on the science case of third-generation, gravitational-wave detectors.
   % \item Developing a ML-based data analysis pipelines for long-duration gravitational-wave signal detection and parameter estimation
   % \item Developing a fast and efficient, non-parametric framework for astrophysical population inference of gravitational-wave sources
   % \item Assessed of impact of facility timing uncertainties on the science case of third-generation gravitational-wave detectors
@@ -200,7 +201,7 @@
   {Jena, Germany}%
   {06/2021 -- 08/2023}
 \begin{itemize}
-  \item Contributed to and extended the functionality of the open-source Python packages \textsc{xkn} and \textsc{gwbench}.
+  \item Contributed to and extended the functionality of the open-source Python packages \textsc{gwbench}, \textsc{xkn}, and \href{https://github.com/matteobreschi/bajes}{\textsc{bajes}}.
   % \item Extended \textsc{gwbench}: numerical improvements, bug fixes, and expansion of the functionality via additional features
   % \item Contributed as a core developer to the \textsc{xkn} Python package for kilonova light-curve modeling from binary neutron star mergers
   % \item Contributed to core modules of the \textsc{bajes} Python code for Bayesian inference of gravitational-wave sources
@@ -214,7 +215,7 @@
   {08/2016 -- 05/2021}
 \begin{itemize}
   \item Developed \textsc{gwbench} as a modular Python framework for large-scale science case studies.
-  \item Investigated the science case of third-generation gravitational-wave detectors via comprehensive trade studies.
+  \item Investigated the science case of third-generation, gravitational-wave detectors via comprehensive trade studies.
   \item Investigated numerical relativity waveforms for a post-Newtonian signature in the strong-field regime.
   % \item Designed and built \textsc{gwbench} from scratch as a modular Python framework
   %       for Fisher-information-based gravitational-wave detector benchmarking and science case studies
@@ -238,9 +239,9 @@
 
 % ── SKILLS ───────────────────────────────────────────────────────────────────
 \section{Technical Skills}
-\cvskill{Programming}{Python, Swift, SwiftUI, Fortran, Java.}
-\cvskill{Python Ecosystem}{JAX, NumPy, SciPy, Pandas, Matplotlib, h5py, joblib, multiprocessing, setuptools.}
-\cvskill{Developer Tools}{Git, Linux, HPC clusters (SLURM/HTCondor), Mathematica, MATLAB, \LaTeX{}.}
+\cvskill{Programming}{Python, Swift, SwiftUI, Fortran, Java, Mathematica, MATLAB.}
+\cvskill{Python Ecosystem}{astropy, h5py, jax, joblib, matplotlib, mpmath, numpy, pandas, scipy, sympy.}
+\cvskill{Developer Tools}{Git/GitHub/GitLab, HPC clusters (SLURM/HTCondor), \LaTeX{}.}
 \cvskill{Data Analysis}{Machine Learning, Bayesian inference, Monte Carlo methods, time series analysis.}
 
 \section{Soft Skills}

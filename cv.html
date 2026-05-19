@@ -20,6 +20,32 @@ title: "CV"
 
       <hr class="cv-divider" />
 
+      <!-- ── Education ──────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Education</h3>
+      <div class="edu-grid">
+
+        {% for edu in site.data.cv.education %}
+        <div class="edu-card">
+          <div class="edu-degree">{{ edu.degree }}</div>
+          <div class="edu-institution">{{ edu.institution }}</div>
+          <div class="edu-location-date">
+            <span>{{ edu.location }}</span>
+            <span>{{ edu.dates }}</span>
+          </div>
+          {% if edu.honors %}
+          <div class="edu-honors">
+            {% for honor in edu.honors %}
+            <span class="honor-tag">{{ honor }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+      </div>
+
+      <hr class="cv-divider" />
+
       <!-- ── Experience ─────────────────────────────────────────────── -->
       <h3 class="subsection-title">Experience</h3>
       <div class="timeline">
@@ -58,29 +84,102 @@ title: "CV"
 
       <hr class="cv-divider" />
 
-      <!-- ── Education ──────────────────────────────────────────────── -->
-      <h3 class="subsection-title">Education</h3>
-      <div class="edu-grid">
+      <!-- ── Skills ─────────────────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Skills</h3>
+      <p class="skills-group-label">Technical Skills</p>
+      <div class="skills-list">
+        {% for skill in site.data.cv.skills.technical %}
+        <div class="skill-row">
+          <span class="skill-category">{{ skill.category }}</span>
+          <span class="skill-items">{{ skill.items }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="skills-group-label" style="margin-top: 28px;">Soft Skills</p>
+      <div class="skills-list">
+        {% for skill in site.data.cv.skills.soft %}
+        <div class="skill-row">
+          <span class="skill-category">{{ skill.category }}</span>
+          <span class="skill-items">{{ skill.items }}</span>
+        </div>
+        {% endfor %}
+      </div>
 
-        {% for edu in site.data.cv.education %}
-        <div class="edu-card">
-          <div class="edu-degree">{{ edu.degree }}</div>
-          <div class="edu-institution">{{ edu.institution }}</div>
-          <div class="edu-location-date">
-            <span>{{ edu.location }}</span>
-            <span>{{ edu.dates }}</span>
+      <hr class="cv-divider" />
+
+      <!-- ── Research Visits ───────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Research Visits</h3>
+      <ul class="conf-list">
+        {% for visit in site.data.cv.visits %}
+        <li class="conf-item">
+          <span class="conf-name">{{ visit.description }}</span>
+          <span class="conf-meta">{{ visit.location }} &middot; {{ visit.date }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <hr class="cv-divider" />
+
+      <!-- ── Honors & Awards ────────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Honors &amp; Awards</h3>
+      <table class="honors-table">
+        {% for honor in site.data.cv.honors %}
+        <tr class="honor-row{% if honor.highlight %} honor-row--highlight{% endif %}">
+          <td class="honor-year">{{ honor.year }}</td>
+          <td class="honor-award">{{ honor.award }}</td>
+          <td class="honor-org">{{ honor.org }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <hr class="cv-divider" />
+
+      <!-- ── Teaching ───────────────────────────────────────────────────────── -->
+      <h3 class="subsection-title">Teaching</h3>
+      <div class="timeline">
+
+        {% for post in site.data.cv.teaching %}
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h4 class="timeline-role">{{ post.role }}</h4>
+                <p class="timeline-org">{{ post.org }}</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-location">{{ post.location }}</span>
+              </div>
+            </div>
+            {% if post.courses %}
+            <ul>
+              {% for course in post.courses %}
+              <li>
+                <span class="teaching-dates">{{ course.dates }}</span>
+                {{ course.name }}
+                <span class="timeline-group">{{ course.tasks }}</span>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
           </div>
-          {% if edu.honors %}
-          <div class="edu-honors">
-            {% for honor in edu.honors %}
-            <span class="honor-tag">{{ honor }}</span>
-            {% endfor %}
-          </div>
-          {% endif %}
         </div>
         {% endfor %}
 
       </div>
+
+      <hr class="cv-divider" />
+
+      <!-- ── Conferences, Seminars & Schools ───────────────────────────────── -->
+      <h3 class="subsection-title">Conferences, Seminars &amp; Schools</h3>
+      <ul class="conf-list">
+        {% for conf in site.data.cv.conferences %}
+        <li class="conf-item">
+          <span class="conf-name">{{ conf.name }}</span>
+          <span class="conf-meta">{{ conf.host }} &middot; {{ conf.location }} &middot; {{ conf.date }}</span>
+        </li>
+        {% endfor %}
+      </ul>
 
     </div>
   </section>

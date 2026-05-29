@@ -82,6 +82,28 @@ software:
       - label: "Class. Quant. Grav. 38 (2021) — arXiv:2010.15202"
         url:   "https://arxiv.org/abs/2010.15202"
 
+  - name:            "elliptax"
+    title:           "JAX Library of Elliptic Integrals and Special Functions"
+    badge:           "Core Developer"
+    badge_secondary: true
+    dates:           "2026 – Present"
+    text:  "elliptax is a JAX library for high-performance numerical computing of elliptic
+            integrals and special functions. Built on JAX, it supports float64 precision,
+            GPU/TPU execution, and automatic differentiation throughout. Implements Carlson
+            symmetric forms, Legendre-form complete and incomplete integrals of all three
+            kinds, Bulirsch integrals with full forward and reverse mode autodiff, and Jacobi
+            theta functions and elliptic functions via a numerically rigorous series algorithm
+            with adaptive truncation and error bounds. A scipy-compatible interface is provided
+            for drop-in use in existing workflows. Based on
+            <a href=\"https://github.com/tagordon/ellip\" target=\"_blank\" rel=\"noopener noreferrer\">tagordon/ellip</a>."
+    bullets:
+      - "Open-source JAX Python package"
+      - "Supports GPU/TPU execution and automatic differentiation"
+      - "scipy-compatible interface via <code>elliptax.special</code>"
+    links:
+      - label: "GitHub"
+        url:   "https://github.com/sborhanian/elliptax"
+
   - name:            "xkn"
     title:           "Kilonova Modeling Framework"
     badge:           "Core Developer"

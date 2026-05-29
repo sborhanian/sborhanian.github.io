@@ -47,3 +47,4 @@ exclude:
   - README.md
   - vendor/
   - .gitignore
+  - serve.sh

@@ -406,7 +406,7 @@ ul { list-style: none; }
 /* ── PROJECTS ──────────────────────────────────────────────────────────── */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: 24px;
 }
 
@@ -469,6 +469,10 @@ ul { list-style: none; }
   font-size: 0.8rem;
   color: var(--muted-light);
   margin-bottom: 14px;
+}
+
+.project-card > p {
+  margin-bottom: 20px;
 }
 
 .project-card ul {

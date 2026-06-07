@@ -423,6 +423,17 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
+.project-card:target {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  animation: card-focus 2s ease forwards;
+}
+
+@keyframes card-focus {
+  0%   { outline-color: var(--accent); }
+  100% { outline-color: transparent; }
+}
+
 .project-header {
   display: flex;
   justify-content: space-between;
@@ -590,6 +601,7 @@ ul { list-style: none; }
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-top: 56px;
   margin-bottom: 28px;
 }
 

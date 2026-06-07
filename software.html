@@ -10,7 +10,7 @@ title: "Software"
       <div class="projects-grid">
 
         {% for project in site.data.cv.software %}
-        <div class="project-card">
+        <div class="project-card" id="{{ project.name }}">
           <div class="project-header">
             <h3 class="project-name">{{ project.name }}</h3>
             <span class="project-badge{% if project.badge_secondary %} project-badge-secondary{% endif %}">

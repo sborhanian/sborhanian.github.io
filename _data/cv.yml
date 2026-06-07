@@ -3,7 +3,7 @@
 about:
   paragraphs:
     - "I'm an astrophysicist and scientific software developer with a decade of experience studying gravitational waves. The focus of my work lies on the development of open-source computational tools to investigate the science case for next-generation gravitational-wave detectors as well as to enable the analysis of data from current and future facilities. I have a strong commitment to develop easy-to-use, community-facing software that fosters reproducibility."
-    - "In particular, I developed and maintain <strong>gwbench</strong>, a Python package that enables rapid benchmarking and forecasting of the science capabilities of gravitational-wave detectors through the Fisher-information formalism. It has been widely adopted in our research community and functions as one of the primary analysis tools for the Einstein Telescope and Cosmic Explorer collaborations."
+    - "In particular, I developed and maintain <a href=\"/software/#gwbench\"><strong>gwbench</strong></a>, a Python package that enables rapid benchmarking and forecasting of the science capabilities of gravitational-wave detectors through the Fisher-information formalism. It has been widely adopted in our research community and functions as one of the primary analysis tools for the Einstein Telescope and Cosmic Explorer collaborations."
     - "Besides, I am interested in developing efficient and accurate methods to detect and analyze gravitational-wave signals, particularly with an eye towards the challenges that next-generation detectors data will present. In this context, I am investigating the use of ML techniques through neural posterior estimation to accelerate the analysis of long-range, gravitational-wave signals to provide efficient early-warning alerts to the wider astronomy community and thereby facilitate multi-messenger observations of compact binary mergers."
     - "Recently, I have been studying and exploring Apple's programming ecosystem, revolving around Swift and SwiftUI. I am planning to release a couple of open-source iOS and macOS apps that I want for my day-to-day use and which I hope can be useful to other users as well."
 
@@ -17,8 +17,8 @@ experience:
     dates:    "09/2023 – Present"
     bullets:
       - "Developing a <strong>jax</strong>-based ML pipeline for gravitational-wave data analysis."
-      - "Extending the Python package <strong>precession</strong> to support
-         <code>jit</code>-compilation and GPU-acceleration through <strong>jax</strong>."
+      - "Extending the Python package <strong>precession</strong> to support <code>jit</code>-compilation and GPU-acceleration through <strong>jax</strong>."
+      - "Developed <a href=\"/software/#elliptax\"><strong>elliptax</strong></a> to compute elliptic functions and integrals within the <strong>jax</strong> ecosystem, providing a scipy-compatible interface for drop-in replacements in existing workflows."
       - "Investigated the impact of facility timing on the science case of
          third-generation gravitational-wave detectors."
 
@@ -29,7 +29,7 @@ experience:
     dates:    "06/2021 – 08/2023"
     bullets:
       - "Contributed to and extended the functionality of the open-source Python
-         packages <strong>gwbench</strong>, <strong>xkn</strong>, and <strong>bajes</strong>."
+         packages <a href=\"/software/#gwbench\"><strong>gwbench</strong></a>, <a href=\"/software/#xkn\"><strong>xkn</strong></a>, and <a href=\"https://github.com/matteobreschi/bajes\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>bajes</strong></a>."
 
   - role:     "Graduate Researcher (Ph.D.)"
     org:      "The Pennsylvania State University"
@@ -37,7 +37,7 @@ experience:
     location: "State College, PA, USA"
     dates:    "08/2016 – 05/2021"
     bullets:
-      - "Developed and built <strong>gwbench</strong> as a modular Python framework
+      - "Developed and built <a href=\"/software/#gwbench\"><strong>gwbench</strong></a> as a modular Python framework
          for large-scale science case studies."
       - "Investigated the science case of third-generation gravitational-wave detectors
          via comprehensive trade studies."
@@ -83,12 +83,12 @@ software:
         url:   "https://arxiv.org/abs/2010.15202"
 
   - name:            "elliptax"
-    title:           "JAX Library of Elliptic Integrals and Special Functions"
-    badge:           "Core Developer"
+    title:           "JAX Library for Elliptic Functions and Integrals"
+    badge:           "Core Developer and Maintainer"
     badge_secondary: true
     dates:           "2026 – Present"
     text:  "elliptax is a JAX library for high-performance numerical computing of elliptic
-            integrals and special functions. Built on JAX, it supports float64 precision,
+            functions and integrals. Built on JAX, it supports float64 precision,
             GPU/TPU execution, and automatic differentiation throughout. Implements Carlson
             symmetric forms, Legendre-form complete and incomplete integrals of all three
             kinds, Bulirsch integrals with full forward and reverse mode autodiff, and Jacobi
@@ -361,7 +361,7 @@ conferences:
     host:     "University of Pisa"
     location: "Pisa, Italy"
     date:     "01/2026"
-  - name:     "Invited Seminar at IIT Bombay"
+  - name:     "Seminar at IIT Bombay [Invited]"
     host:     "Indian Institute of Technology Bombay"
     location: "Mumbai, India"
     date:     "11/2025"
@@ -389,6 +389,10 @@ conferences:
     host:     "University of Milano-Bicocca"
     location: "Milan, Italy"
     date:     "04/2024"
+  - name:     "Colloquium at Gravitation AstroParticle Physics Amsterdam (GRAPPA) [Invited]"
+    host:     "GRAPPA @ University of Amsterdam"
+    location: "Amsterdam, Netherlands"
+    date:     "01/2024"
   - name:     "TEONGRAV Workshop 2023"
     host:     "University of Naples Federico II"
     location: "Naples, Italy"
@@ -397,8 +401,8 @@ conferences:
     host:     "University of Milano-Bicocca"
     location: "Milan, Italy"
     date:     "07/2023"
-  - name:     "Seminar at INFN Trento Institute for Fundamental Physics and Applications"
-    host:     "Trento Institute for Fundamental Physics and Applications"
+  - name:     "Seminar at INFN Trento Institute for Fundamental Physics and Applications (TIFPA) [Invited]"
+    host:     "INFN TIFPA @ University of Trento"
     location: "Trento, Italy"
     date:     "12/2022"
   - name:     "Virtual DPG Spring Meeting 2022"
@@ -417,11 +421,11 @@ conferences:
     host:     "American Physical Society"
     location: "Virtual"
     date:     "04/2021"
-  - name:     "Physics Colloquium: Compact Binary Mergers as Astrophysical Laboratories (Invited · 2021 Peter Clay Eklund Lecture)"
+  - name:     "Physics Colloquium: Compact Binary Mergers as Astrophysical Laboratories [Invited · 2021 Peter Clay Eklund Lecture]"
     host:     "Pennsylvania State University"
     location: "Virtual"
     date:     "04/2021"
-  - name:     "Physics Colloquium: Compact Binary Mergers as Astrophysical Laboratories (Invited)"
+  - name:     "Physics Colloquium: Compact Binary Mergers as Astrophysical Laboratories [Invited]"
     host:     "Georgia Southern University"
     location: "Virtual"
     date:     "10/2020"

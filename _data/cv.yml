@@ -14,10 +14,10 @@ experience:
     org:      "Università degli Studi di Milano-Bicocca"
     group:    "Research group: Prof. Davide Gerosa"
     location: "Milan, Italy"
-    dates:    "09/2023 – Present"
+    dates:    "09/2023 – 08/2026"
     bullets:
-      - "Developing a <strong>jax</strong>-based ML pipeline for gravitational-wave data analysis."
-      - "Extending the Python package <strong>precession</strong> to support <code>jit</code>-compilation and GPU-acceleration through <strong>jax</strong>."
+      - "Developed a <strong>jax</strong>-based ML pipeline for gravitational-wave data analysis."
+      - "Extended the Python package <strong>precession</strong> to support <code>jit</code>-compilation and GPU-acceleration through <strong>jax</strong>."
       - "Developed <a href=\"/software/#elliptax\"><strong>elliptax</strong></a> to compute elliptic functions and integrals within the <strong>jax</strong> ecosystem, providing a scipy-compatible interface for drop-in replacements in existing workflows."
       - "Investigated the impact of facility timing on the science case of
          third-generation gravitational-wave detectors."
@@ -236,20 +236,20 @@ education:
 skills:
   technical:
     - category: "Programming"
-      items:    "Python, Swift, SwiftUI, Fortran, Java, Mathematica, MATLAB"
+      items:    "Python, C++, Bash, Swift, SwiftUI, Fortran, Java, Mathematica, MATLAB"
     - category: "Python Ecosystem"
-      items:    "astropy, einops, h5py, jax, joblib, matplotlib, mpmath, numpy, pandas, pytest, scipy, sympy"
+      items:    "astropy, einops, equinox, h5py, jax, joblib, matplotlib, mpmath, numpy, optax, pandas, pytest, scipy, sympy"
     - category: "Developer Tools"
-      items:    "Git, GitHub Actions, HPC clusters (SLURM/HTCondor), LaTeX"
+      items:    "Linux, Git, GitHub Actions (CI/CD), HPC clusters (SLURM/HTCondor), GPU computing, LaTeX"
     - category: "Data Analysis"
-      items:    "Machine Learning, Bayesian inference, Monte Carlo methods, time series analysis"
+      items:    "Machine Learning, Bayesian inference and parameter estimation, Fisher-information/covariance analysis, Monte Carlo methods, time series analysis, signal processing, gradient-based optimization"
   soft:
     - category: "Communication"
-      items:    "20+ presentations and invited seminars at international conferences and universities"
+      items:    "27 talks at international conferences and universities, including 5 invited seminars and colloquia"
     - category: "Technical Writing"
-      items:    "25 academic publications (3700+ citations)"
+      items:    "24 academic publications (3500+ citations)"
     - category: "Languages"
-      items:    "Fluent: German, English, Persian · Basic: French, Italian"
+      items:    "Native: German, Persian · Near-native: English · Basic: French, Italian"
 
 # ── Research Visits ───────────────────────────────────────────────────────────
 visits:

@@ -223,7 +223,7 @@ education:
     dates:       "2014 – 2021"
     honors:
       - "Fulbright Scholar"
-      - "Peter Clay Eklund Lecturing Award"
+      - "Peter Eklund Award for Scientific Communication"
 
   - degree:      "B.Sc. in Physics & Mathematics"
     institution: "Technical University of Berlin"
@@ -271,7 +271,7 @@ visits:
 
 # ── Honors & Awards ───────────────────────────────────────────────────────────
 honors:
-  - award:    "2021 Peter Clay Eklund Lecturing Award"
+  - award:    "2021 Peter Eklund Award for Scientific Communication"
     org:      "Department of Physics, Pennsylvania State University"
     year:     "2021"
     highlight: true
